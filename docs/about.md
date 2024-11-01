@@ -9,3 +9,5 @@ Comment
 Fixing issue 1
 
 Use commit message
+
+Fixing issue 2
