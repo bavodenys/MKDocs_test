@@ -7,3 +7,5 @@ Second test in Github
 Comment
 
 Fixing issue 1
+
+Use commit message
