@@ -5,6 +5,10 @@ on:
     branches:
       - master
 
+permissions:
+  id-token: write  # Allow writing ID token
+  contents: write   # Allow write access to repository contents
+
 jobs:
   build_mkdocs:
     runs-on: ubuntu-latest
@@ -37,7 +41,5 @@ jobs:
         with:
           path: '.'
       - name: Deploy to GitHub Pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_ACTION }} 
         id: deployment
         uses: actions/deploy-pages@v4
