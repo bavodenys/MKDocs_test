@@ -8,6 +8,7 @@ on:
 permissions:
   id-token: write  # Allow writing ID token
   contents: write   # Allow write access to repository contents
+  pages: write      # Allow writing access to GitHub Pages
 
 jobs:
   build_mkdocs:
