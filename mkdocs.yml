@@ -1,0 +1,16 @@
+site_name: Bavo Denys
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Models:
+    - Model 1:
+      - General: models/model1_general.md
+      - Requirements: models/model1_requirements.md
+      - Description: models/model1_description.md
+    - Model 2: models/model2.md
+
+
+
+theme: readthedocs
+
