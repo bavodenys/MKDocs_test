@@ -2,7 +2,7 @@ import requests
 import sys
 import os
 
-GITHUB_REPO = 'username/repository'  # Replace with your repository name
+GITHUB_REPO = 'bavodenys/MKDocs_test'  # Replace with your repository name
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
 RELEASE_TAG = sys.argv[1].strip('refs/tags/')  # Get the tag name
 
