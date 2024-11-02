@@ -3,6 +3,7 @@ site_name: MKDocs Test
 nav:
   - Home: index.md
   - About: about.md
+  - Releases: releases.md
 
 theme: readthedocs
 
