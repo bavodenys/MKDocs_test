@@ -21,6 +21,8 @@ jobs:
     - name: Upload release asset
       uses: softprops/action-gh-release@v1
       with:
+        draft: false 
+        prerelease: false
         files: |
           requirements.txt
       env:
