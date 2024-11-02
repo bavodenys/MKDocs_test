@@ -3,7 +3,7 @@ name: Generate Release Notes
 on:
   push:
     tags:
-      - 'v*.*.*'  # Matches tags like v0.0.1, v0.0.2, etc.
+      - 'v*.*.*'  
 
 jobs:
   generate_release_notes:
@@ -30,7 +30,7 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: "Add release notes for ${{ github.ref_name }}"
-        branch: main  # Make sure this matches your target branch
+        branch: master 
 
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
