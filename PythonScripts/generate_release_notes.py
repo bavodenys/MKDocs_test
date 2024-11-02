@@ -32,7 +32,9 @@ def get_issues_for_milestone(milestone_number):
     return response.json()
 
 def generate_release_notes(issues, release_tag):
-    filename = f'docs/releases/{release_tag}.md'
+    directory = 'docs/releases/'
+    os.makedirs(directory, exist_ok=True)
+    filename = f'{directory}{release_tag}.md'
     with open(filename, 'w') as f:
         f.write(f'# Release {release_tag}\n\n## Resolved Issues\n')
         if issues:
