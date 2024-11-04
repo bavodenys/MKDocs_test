@@ -12,4 +12,4 @@ Use commit message
 
 Fixing issue 2
 
-Making a modification
+Making a modification ! 
