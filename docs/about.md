@@ -13,3 +13,5 @@ Use commit message
 Fixing issue 2
 
 Making a modification ! 
+
+I changed my username to Bavo Denys
