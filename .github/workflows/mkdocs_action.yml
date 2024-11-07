@@ -24,9 +24,9 @@ jobs:
           
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt  # Install from requirements.txt
+          pip install -r documentation/requirements.txt  # Install from requirements.txt
 
-      - run: mkdocs gh-deploy --config-file mkdocs.yml --force
+      - run: mkdocs gh-deploy --config-file documenation/mkdocs.yml --force
 
   deploy_mkdocs:
     needs: build_mkdocs
