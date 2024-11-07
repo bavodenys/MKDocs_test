@@ -32,7 +32,7 @@ def get_issues_for_milestone(milestone_number):
     return response.json()
 
 def generate_release_notes(issues, release_tag):
-    directory = 'docs/releases/'
+    directory = 'documentation/docs/releases/'
     os.makedirs(directory, exist_ok=True)
     filename = f'{directory}{release_tag}.md'
     with open(filename, 'w') as f:
